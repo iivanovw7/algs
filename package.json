@@ -1,0 +1,14 @@
+{
+    "name": "algs",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "jest --verbose --colors --config jest.config.js",
+        "test:watch": "npm run test --watch"
+    },
+    "author": "iivanovw7",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^28.1.0"
+    }
+}
