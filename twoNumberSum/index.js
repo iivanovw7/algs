@@ -1,8 +1,7 @@
 /**
+ * Finds whether there is a pair of numbers in array that sums up to target number.
  * @function
  * @callback twoNumberSum
- *
- * Finds whether there is a pair of numbers in array that sums up to target number.
  *
  * @param {Array.<number>} numbers - represents list of numbers, no value is repeated.
  * @param {number} targetSum - represents a target sum of any pair from `numbers`.

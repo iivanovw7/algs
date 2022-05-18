@@ -31,7 +31,7 @@ const testCases = [
 function check(method, options) {
     const { assert, sequence, subsequence } = options;
 
-    it(`Should return [${String(assert)}] if called with: [${String(sequence)}], [${String(subsequence)}]`, function validateSubsequence_1_Test() {
+    it(`Should return [${String(assert)}] if called with: [${String(sequence)}], [${String(subsequence)}]`, function () {
         expect(method(sequence, subsequence))
             .toEqual(assert);
     });
@@ -43,7 +43,7 @@ describe(validateSubsequence_1.name, function validateSubsequence_1_TestSuite() 
     }
 });
 
-describe(validateSubsequence_2.name, function validateSubsequence_1_TestSuite() {
+describe(validateSubsequence_2.name, function validateSubsequence_2_TestSuite() {
     for (const test of testCases) {
         check(validateSubsequence_2, test);
     }

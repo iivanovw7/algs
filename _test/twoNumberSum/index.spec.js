@@ -26,7 +26,7 @@ const testCases = [
 function check(method, options) {
     const { assert, numbers, targetSum } = options;
 
-    it(`Should return [${String(assert)}] if called with: [${String(numbers)}], ${targetSum}`, function validateSubsequence_1_Test() {
+    it(`Should return [${String(assert)}] if called with: [${String(numbers)}], ${targetSum}`, function () {
         expect(method(numbers, targetSum).sort())
             .toEqual(assert.sort());
     });
