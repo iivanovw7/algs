@@ -2,8 +2,8 @@
  * Verifies if array of numbers is a valid `subsequence` of array given.
  *
  * Subsequence stands for sequence produced out of another sequence by removing certain elements.
- *  [1, 54, -1, 44, 5, 9, 0]
- *  [1, -1, 0]
+ *      [1, 54, -1, 44, 5, 9, 0]
+ *      [1, -1, 0]
  *
  * @function
  * @callback validateSubsequence
