@@ -29,7 +29,7 @@ export function tournamentWinner(competitions, results) {
         }
 
         // Saves and updates last best team in order to avoid second loop.
-        if (!scores[currentBestTeam] || scores[winner] > scores[currentBestTeam]) {
+        if (!currentBestTeam || scores[winner] > scores[currentBestTeam]) {
             scores.currentBestTeam = winner;
         }
     }

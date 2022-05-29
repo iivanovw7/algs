@@ -12,12 +12,24 @@ const testCases = [
         expected: "a"
     },
     {
-        competitions: [['a', 'b'], ['a', 'b'], ['a', 'b']],
+        competitions: [
+            ['a', 'b'],
+            ['a', 'b'],
+            ['a', 'b']
+        ],
         results: [0, 0, 1],
         expected: "b"
     },
     {
-        competitions: [['a', 'b'], ['a', 'b'], ['a', 'b'], ['c', 'a'], ['c', 'a'], ['c', 'a'], ['c', 'a']],
+        competitions: [
+            ['a', 'b'],
+            ['a', 'b'],
+            ['a', 'b'],
+            ['c', 'a'],
+            ['c', 'a'],
+            ['c', 'a'],
+            ['c', 'a']
+        ],
         results: [0, 0, 1, 1, 0, 0, 1],
         expected: "a"
     }
