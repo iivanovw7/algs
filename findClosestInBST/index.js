@@ -1,12 +1,12 @@
 /**
- * Finds the closet value to a target inside a BST.
+ * Finds the closet value to a target inside a BST (binary search tree).
  *
  * @param {Object} tree - BST.
  * @param {number} target - search term.
  *
  * @return {number} closes value or the target value.
  *
- * O(Log(n)) time | O(n) space.
+ * O(Log(n)) time | O(nLog(n)) space.
  *  can bde O(n) in case of only one branch.
  */
 export function findClosestInBST(tree, target) {
@@ -16,15 +16,15 @@ export function findClosestInBST(tree, target) {
 /**
  * Recursive search helper.
  *
- * @param {Object} tree - BST.
+ * @param {Object} node - BST.
  * @param {number} target - search term.
  * @param {number} closest - last known closes value.
  *
  * @return {number} closes value or the target value.
  */
-function findClosesValueInBST(tree, target, closest) {
-    if (tree) {
-        const { value, left, right } = tree;
+function findClosesValueInBST(node, target, closest) {
+    if (node) {
+        const { value, left, right } = node;
 
         if (Math.abs(target - closest) > Math.abs(target - value)) {
             closest = value;

@@ -64,7 +64,7 @@ const testCases = [
 ];
 
 describe(findClosestInBST.name, function findClosestInBST_TestSuite() {
-    test.each(testCases)(`findClosestInBST($coins, $target) should return $expected`, function findClosestInBST_TestSuite_Test(params) {
+    test.each(testCases)(`findClosestInBST($tree, $target) should return $expected`, function findClosestInBST_TestSuite_Test(params) {
         const { tree, target, expected } = params;
 
         expect(findClosestInBST(tree, target))

@@ -7,7 +7,7 @@
  *
  * @param {Array.<number>} array - represents sorted array of positive and negative integers.
  *
- * @returns {Array.<number>} sorted array of squares.
+ * @return {Array.<number>} sorted array of squares.
  */
 
 /**
